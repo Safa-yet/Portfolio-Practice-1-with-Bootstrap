@@ -1,0 +1,252 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+}
+.body{
+    background-image: url(../img/wlc-bg1.jpg);
+}
+.innerNav{
+        background-color: #2e3d44;
+    
+}
+.msg{
+    background-color:#08d665;
+    border: none;
+}
+.msg img{
+   transition: transform 0.3s ease;
+}
+.msg:hover img{
+    transform: translateY(-3px);    }
+
+.left-arrow{
+    border-right: 1px solid #ffffff62; 
+    transition: transform 0.3s ease;
+}
+.right-arrow{
+    transition: transform 0.3s ease;
+}
+.right-arrow:hover{
+    transform: translateX(5px);
+}
+.angle{
+    transition: transform 0.3s ease;
+}
+.cont-btn:hover .angle{
+    transform: translateX(5px);
+}
+.arrow{
+    padding: 0 10px;
+   
+}
+.left-arrow:hover{
+    transform: translateX(-5px);
+}
+i{
+    transition: all 0.2s ease;
+}
+i:hover{
+    color: #08d665;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.cont-btn{
+    background-color: #08d665;
+    border: none;
+    padding: 11px 20px;
+    
+    
+   
+}
+.nav-link::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #08d665;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+    opacity:    0;
+    visibility: hidden;
+
+}
+.nav-link:hover::after{
+    width: 100%;
+    opacity:    1;
+    visibility: visible;
+}   
+.btn-arrow{
+   transition: transform 0.3s ease;
+  
+}
+.cont-btn:hover .btn-arrow{
+    transform: translateX(5px);
+}
+.navbar-toggler{
+    border: none;
+}
+.srcBox{
+    border: none;
+    
+    transition: border-bottom 0.3s ease;
+}
+.srcBox:focus{
+border-bottom: 2px solid #08d665;
+outline: none;
+
+}
+.navbar{
+    border-bottom: 0.5px solid #ffffff26;
+}
+.bio{
+    border-left: 3px solid #08d665;
+    
+    padding-left: 10px;
+}
+.name{
+    color: #08d665;
+}
+.aboutImg{
+    width: 500px;;
+    height: 600px;
+    object-fit: cover;
+}
+.back::before{
+position: absolute;
+  content: "";
+  height: 300px;
+  width: 300px;
+  background: url(../img/about-BG-shape.svg) no-repeat;
+    background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  bottom: -20%;
+  left: -10%;
+  z-index: -1;
+}
+.hbox{
+    background-color: rgba(27, 27, 27, 0.532);
+    transition: all 0.4s ease;
+}
+.abbox{
+    background-color: rgba(191, 30, 30, 0.532);
+    transition: all 0.4s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -200px;
+
+    
+}
+.hbox:hover .abbox{
+   top: 0;
+}
+.abt{
+    margin-top: -30px;
+    z-index: -1;color: rgba(27, 27, 27, 0.439);
+    text-transform: uppercase;
+     /* text-shadow: #08d6654d 0px 0px 5px; */
+    letter-spacing: 10px;
+    -webkit-text-stroke: 0.5px #e7f8ff1a;  /* Stroke (TEXT-OUTLINE) color and width */
+}
+.abt1{
+    margin-top: -20px;
+    z-index: -1;
+    color: #1b1b1b;
+    text-transform: uppercase;
+     /* text-shadow: #08d6654d 0px 0px 5px; */
+
+    
+    -webkit-text-stroke: 0.5px #4b5052b7;  /* Stroke (TEXT-OUTLINE) color and width */
+   
+}
+.abtLine{
+    z-index: 999;
+    position: relative;
+    text-transform: uppercase;
+   
+}
+.span1{
+    color: #08d665;
+    font-weight: 200;
+    text-transform: uppercase;
+    font: size 1.5em;;
+}
+.abtSe{
+    height: 100%;
+}
+.sec2{
+    background-color: #0f0f0f;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.prg{
+    height: 150px;
+    width: 150px;
+    background-image: url(../img/progress-ring.png);
+    background-repeat: no-repeat;
+}
+
+.box{
+    background-color: rgba(27, 27, 27, 0.532);
+    transition: all 0.4s ease;
+    
+}
+.box:hover{
+    transform: translateY(-10px);
+    background: #242323;
+}
+@media (max-width: 768px) {
+    .srcBox{
+        width: 100px;
+    }
+    .heroSec{
+        margin-top: 70px;
+       
+    }
+    .abt2{
+        margin-top: 30px;
+    }
+    .aboutImg{
+        margin: 0 auto;
+    width: 400px;;
+    height: 500px;
+    object-fit: cover;
+}
+.bio{
+    border-bottom: px solid #08d665;
+    border-left: none;
+}
+.back::before{
+display: none;
+}
+.abtSe{
+    height: 100%;
+}
+.dbtn{
+    width: 100%;
+    margin: 10px 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
