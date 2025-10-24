@@ -204,6 +204,179 @@ position: absolute;
     transform: translateY(-10px);
     background: #242323;
 }
+.serviceBox{
+    width: 32%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #13181a;
+    overflow: hidden;
+    z-index: 999;
+    margin-bottom: 30px; 
+    transition: color 0.6s ease;
+}
+.serviceBox h3{
+    color: #08d665;
+    font-weight: 600;
+}
+.serviceBox p{
+    color: #d1d1d1;
+    font-size: 1rem;
+   
+}
+.ringCircle{
+   display: none;
+    background-color: #08d665;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -430px;
+    right: -400px;
+    z-index: -5;
+    
+   
+}
+
+ .ring1{
+    position: absolute;
+    bottom: 8px;
+    right: -20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+    background-color: #5fdb97;
+    z-index: -1;
+    
+   
+    
+}
+.ring2{
+    position: absolute;
+    bottom: -31px;
+    right: -45px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -2;
+    
+    background-color: #4dd78b;
+    
+}
+.ring3{
+    position: absolute;
+    bottom: -31px;
+    right: -45px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -3;
+    
+    background-color: #39d27e;
+    
+}
+.ring4{
+    position: absolute;
+    bottom: -31px;
+    right: -45px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -4;
+    
+    background-color: #22cd6f;
+    
+}
+.serviceBox:hover h3{
+    cursor: pointer;
+    
+    color: white;
+   
+}   
+.serviceBox:hover .ringCircle{
+    display: block;
+   animation: ring-animation 0.5s forwards;
+   color: white;
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@keyframes ring-animation {
+    0% {
+        right: -400px;
+        bottom: -430px;
+    }
+    100% {
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.owl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.owlbox{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    
+}
+.owlbox:hover .owltext{
+    bottom: 0;
+    transition: bottom 0.6s ease;
+    left: 0;
+}
+
+.owltext{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -500px;
+    background-color: #08d665;
+    left: 10px;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.sec5{
+    background-image: url(../img/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inp{
+    outline: 1px solid;
+    outline-color: #08d665;
+    border-radius: 10px;
+}
+
+.btns{
+background-color: #08d665;
+padding: 12px 30px;
+font-size: 2rem;
+border-radius: 10px;
+transition: all 0.4s ease;
+}
+.btns:hover{
+    background: transparent;
+    outline: 1px solid #08d665;
+    color: #08d665;
+}
+
 @media (max-width: 768px) {
     .srcBox{
         width: 100px;
@@ -235,6 +408,51 @@ display: none;
     width: 100%;
     margin: 10px 0;
 }
+.service{
+    flex-direction: column;
+}
+.serviceBox{
+    width: 100%;
+    margin-bottom: 20px;    }
+
+    .owl{
+        justify-content: center;
+        align-items: center;
+
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+
+.owltext{
+    position: absolute;
+    width: 360px;
+  
+    bottom: -500px;
+    background-color: #08d665;
+    left: 10px;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.owlbox:hover .owltext{
+    bottom: 0;
+    transition: bottom 0.6s ease;
+   
+}
+.btns{
+background-color: #08d665;
+padding: 12px 30px;
+font-size: 1rem;
+border-radius: 10px;
+}
+
 
 }
 
