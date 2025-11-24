@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glint-Portfolio</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Css/preloader.css">
+    <!-- Step 1: jQuery link (এটা আগে আসবে) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Step 2: Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+<!-- Step 3: Owl Carousel Theme (optional) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Step 4: Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  </head>
+  <body class="body">
+    <!-- preloader -->
+
+    <div class="loader-wrapper" id="loader-3">
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+        <div id="loader"></div>
+    </div>
+    
+
+
+    <!-- <div id="preloader">
+      
+    </div> -->
+    <!-- Inner Navigation -->
+    <div class="innerNav h-25 d-none d-lg-block">
+      <div class="container d-flex justify-content-between align-items-center right-nav">
+        <div class="gap-1 d-flex justify-content-center align-items-center">
+          <button class="msg ">
+            <img
+              class="d-block py-3 px-3 fw-bold"
+              src="img/msg-icon.svg"
+              alt=""
+            />
+          </button>
+          <h6 class="pe-3 text-uppercase fs-6">
+            Elementor Is Great WordPress...
+          </h6>
+          <a class="ms-3 left-arrow arrow">
+           <i class="fa-solid fa-arrow-left"></i>
+        </a>
+          <a class="arrow right-arrow">
+           <i class="fa-solid fa-arrow-right" ></i>
+        </a>
+     </div>
+     <div class="rightNav">
+        <a class="me-3 " href="#"><i class="fa-brands  fa-facebook-f border-start d-inline-block py-3 px-3"></i></a>
+          <a class="me-3" href="#"><i class="fa-brands fa-twitter border-start d-inline-block py-3 px-3"></i></a>
+          <a class="me-3" href="#"><i class="fa-brands fa-linkedin-in border-start d-inline-block py-3 px-3"></i></a>
+          <a class="me-3" href="#"><i class="fa-brands fa-instagram border-start d-inline-block py-3 px-3"></i></a>
+          <button class="px-4 cont-btn"><i class="fa-solid fa-angles-right angle "></i>     Contact Me</button>
+     </div>
+    </div>
+    </div>
+
+    <!-- NAVIGATION -->
+     
+    <nav class="navbar navbar-expand-lg h-25 text-white py-4 sticky-top bg-black">
+      <div class="container ">
+        <div><a href="#home" class="navbar-brand"><img src="img/logo.png" alt=""></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse  collapse end-0 float-end justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-end gap-2 ">
+            <li class="nav-item position-relative"><a class="nav-link text-white text-uppercase  mx-2" href="#home">Home</a></li>
+            <li class="nav-item position-relative"><a class="nav-link text-white text-uppercase  mx-2" href="#about">About</a></li>
+            <li class="nav-item position-relative"><a class="nav-link text-white text-uppercase  mx-2" href="#services">Services</a></li>
+            <li class="nav-item position-relative"><a class="nav-link text-white text-uppercase  mx-2" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item position-relative"><a class="nav-link text-white text-uppercase  mx-2" href="#contact">Contact</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-1 ms-2 fs-5 align-items-end"><i class="fa-solid fa-search" style="color:#08d665 ;"></i><input class="bg-transparent srcBox text-white w-100" type="search" placeholder="Search">
+        </div>
+        <div class="d-none d-lg-block mx-3 ca">
+          <img src="img/hamburger.svg" alt="">
+      </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+     <section class="heroSec container d-flex ">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-lg-7 text-white text-center text-lg-start ">
+          <h1 class="fw-bold display-3 text-uppercase ">I'm <span class="name text-uppercase">Safayet Ul Islam</span></h1>
+          <h2 class="fw-bold fs-2 text-uppercase">A Professional Web Designer</h2>
+          <p class="py-3 fs-5 bio my-4">I am a professional web designer with over 5 years of experience in creating stunning and user-friendly websites. I specialize in responsive design, ensuring that your website looks great on all devices.</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 dbtn">Hire Me</button>
+          <button class="btn btn-outline-primary px-4 py-2 fs-5 dbtn ms-lg-3 ">Download CV</button>
+        </div>
+        <div class="col-12 col-lg-5 d-none d-lg-block">
+          <img class="img-fluid" src="img/author1.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+     <section class="aboutSec container py-5">
+      <div class="row d-flex align-items-center position-relative">
+        <div class="col-lg-6 col-12 text-center back">
+          <div>
+            <img class="aboutImg" src="img/about1.png" alt=""></div>
+          
+        </div>
+        <div class="mt-4 col-12 col-lg-6 text-center text-lg-start px-4 position-relative">
+          <h2 class="fw-bold display-2 position-absolute z-0 top-0 abt">About Me</h2>
+          <h1 class="fw-bold  z-1 abtLine display-4">Failure is The condiment that gives <span class="span1">SUCCESS</span></h1>
+          <p class="py-3 fs-5  my-4">I am passionate about web design and always strive to stay updated with the latest trends and technologies in the industry. I believe that a well-designed website can significantly impact a business's success, and I am committed to delivering high-quality work that exceeds my clients' expectations.</p>
+          <button class="btn btn-outline-success px-4 py-2 fs-5 dbtn">Download CV</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANOTHER SECTION -->
+    <section class="sec2  p-lg-5">
+      <div class="container  py-5 d-lg-flex justify-content-between align-items-center text-white">
+        <div class="mt-4 text-center text-lg-start px-4 position-relative">
+          <h2 class="fw-bolder display-1 position-absolute z-0  abt1">my career</h2>
+          <p class="span1 fw-bolder fs-3  abtLine">my experience</p>
+          <h1 class="fw-bold text-uppercase display-5">experience and <span class="span1">SKILL</span></h1>
+        </div>
+      <div class="w-50 ">
+        <p class="py-3 fs-5 bio my-4 ">I am a professional web designer with over 5 years of experience in creating stunning and user-friendly websites. I specialize in responsive design, ensuring that your website looks great on all devices.</p>
+
+      </div>
+      </div>
+
+      <div class="container">
+      <div class="row g-4 my-3 ">
+        <div class="col-12 col-lg-3 col-md-6   p-3 box border-end ">
+            <p class="fw-bold text-uppercase fw-bolder">Web Design (5 years)</p>
+            <h3 class="span1 ">Google Corporation</h3>
+            <p class="fs-5">All you need to do your best work together in one package works seamlessly across devices.</p>
+          
+        </div>
+        <div class="col-12 col-lg-3 col-md-6   p-3 box  border-end ">
+            <p class="fw-bold text-uppercase fw-bolder">Web Design (5 years)</p>
+            <h3 class="span1 ">Google Corporation</h3>
+            <p class="fs-5">All you need to do your best work together in one package works seamlessly across devices.</p>
+          
+        </div>
+        <div class="col-12 col-lg-3 col-md-6   p-3 box  border-end">
+            <p class="fw-bold text-uppercase fw-bolder">Web Design (5 years)</p>
+            <h3 class="span1 ">Google Corporation</h3>
+            <p class="fs-5">All you need to do your best work together in one package works seamlessly across devices.</p>
+          
+        </div>
+        <div class="col-12 col-lg-3 col-md-6   p-3 box ">
+            <p class="fw-bold text-uppercase fw-bolder">Web Design (5 years)</p>
+            <h3 class="span1 ">Google Corporation</h3>
+            <p class="fs-5">All you need to do your best work together in one package works seamlessly across devices.</p>
+          
+        </div>
+      </div>
+      </div>
+      </section>
+      <section class="sec3 py-5 ">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center text-center text-white ">
+              <div class="prg d-flex justify-content-center align-items-center">
+                <h1>60%</h1>
+              </div>
+              <h4 class=" text-uppercase">Branding Design</h4>
+            </div>
+            <div class="col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center text-center text-white gap-3">
+              <div class="prg d-flex justify-content-center align-items-center">
+                <h1>60%</h1>
+              </div>
+              <h4 class=" text-uppercase">Branding Design</h4>
+            </div>
+            <div class="col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center text-center text-white  gap-3">
+              <div class="prg d-flex justify-content-center align-items-center">
+                <h1>60%</h1>
+              </div>
+              <h4 class=" text-uppercase">Branding Design</h4>
+            </div>
+            <div class="col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center text-center text-white  gap-3">
+              <div class="prg d-flex justify-content-center align-items-center">
+                <h1>60%</h1>
+              </div>
+              <h4 class=" text-uppercase">Branding Design</h4>
+            </div>
+          </div>
+        </div>
+
+        
+      </section>
+      <!-- service section -->
+       <section class="sec3">
+         <div class="container  py-5 d-lg-flex justify-content-between align-items-center text-white">
+        <div class="mt-4 text-center text-lg-start px-4 position-relative">
+          <h2 class="fw-bolder display-6 position-absolute z-0  abt1">Our services</h2>
+          <p class="span1 fw-bolder fs-4  abtLine">what we do</p>
+          <h1 class="fw-bold text-uppercase fs-3">services and <span class="span1">solution</span></h1>
+        </div>
+      <div class="w-50 ">
+        <p class="py-3 fs-5 bio my-4 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, assumenda.</p>
+
+      </div>
+      </div>
+      <div class="container service">
+        <div class="  text-center text-white p-5 serviceBox position-relative">
+          <img src="/img/Untitled.svg" alt="" class="my-4 ">
+          <h3 class="text-uppercase my-4 ">Design Principles</h3>
+          <p class="text-dar">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis quae laborum quisquam delectus laudantium adipisci, molestiae eaque dolore porro.</p>
+          <div class="ringCircle">
+            <span class="ring1"></span>
+            <span class="ring2"></span>
+            <span class="ring3"></span>
+            <span class="ring4"></span>
+          </div>
+        </div>
+        <div class="  text-center text-white p-5 serviceBox position-relative">
+          <img src="/img/Untitled.svg" alt="" class="my-4 ">
+          <h3 class="text-uppercase my-4 ">Design Principles</h3>
+          <p class="text-dar">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis quae laborum quisquam delectus laudantium adipisci, molestiae eaque dolore porro.</p>
+          <div class="ringCircle ">
+            <span class="ring1"></span>
+            <span class="ring2"></span>
+            <span class="ring3"></span>
+            <span class="ring4"></span>
+          </div>
+        </div>
+        <div class="  text-center text-white p-5 serviceBox position-relative">
+          <img src="/img/Untitled.svg" alt="" class="my-4 ">
+          <h3 class="text-uppercase my-4 ">Design Principles</h3>
+          <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis quae laborum quisquam delectus laudantium adipisci, molestiae eaque dolore porro.</p>
+          <div class="ringCircle">
+            <span class="ring1"></span>
+            <span class="ring2"></span>
+            <span class="ring3"></span>
+            <span class="ring4"></span>
+          </div>
+        </div>
+        
+      </div>
+
+      
+
+       </section>
+       <section class="sec4 my-5">
+        <div class="container  py-5 d-lg-flex justify-content-between align-items-center text-white">
+        <div class="mt-4 text-center text-lg-start px-4 position-relative">
+          <h2 class="fw-bolder display-6 position-absolute z-0  abt1"><span class="display-3 abt1">our </span>Work</h2>
+          <p class="span1 fw-bolder fs-4  abtLine">Working Process</p>
+          <h1 class="fw-bold text-uppercase fs-3">latest working<span class="span1"> project</span></h1>
+        </div>
+      <div class="w-50 ">
+        <p class="py-3 fs-5 bio my-4 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, assumenda.</p>
+
+      </div>
+      </div>
+
+      <!-- owl Carousel -->
+      <div class="container">
+        <div class="owl owl-carousel owl-theme">
+          <div class=" owlbox item">
+            <img src="/img/project2.png" width="360px" alt="">
+            <div class="owltext">
+              <h3>Menu By Safayet Broo</h3>
+            </div>
+          </div>
+          <div class=" owlbox item">
+            <img src="/img/project3.png" width="360px" alt="">
+            <div class="owltext">
+              <h3>Menu By Safayet Broo</h3>
+            </div>
+          </div>
+          <div class=" owlbox item">
+            <img src="/img/project4.png" width="360px" alt="">
+            <div class="owltext">
+              <h3>Menu By Safayet Broo</h3>
+            </div>
+          </div>
+         
+        </div>
+
+       </section>
+       <section class="sec5 my-5 last py-4">
+        <div class="container d-flex justify-content-center">
+          <div class="header d-flex flex-column align-items-center gap-4 w-75">
+            <h3 class="span1 fw-bold pt-3">Newslater</h3>
+            <h1 class="text-uppercase display-4 fw-bolder  text-center">stay up to date, Subscribe to the free <span class="span1">newsletter</span> </h1>
+            <div class="email d-flex justify-content-center gap-3 my-5">
+              <input type="text" class="fs-3 p-2 text-black-25 bg-dark rounded-1 inp" placeholder="Enter Your Email">
+              <button class=" btns">Subscribe</button>
+            </div>
+            <p class="text-dark-emphasis my-5">Copyright © 2019 by <span class="span1">Safayet</span> all right reserved</p>
+
+          </div>
+          
+        </div>
+       </section>
+
+
+
+       <!-- Bootstrap Bundle JS -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+       <script src="main.js"></script>
+       <script>
+  
+</script>
+
+        </body>
+      </html>
